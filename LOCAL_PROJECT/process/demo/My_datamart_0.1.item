@@ -1,0 +1,1691 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
+  <context confirmationNeeded="false" name="Default"/>
+  <parameters>
+    <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="32" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="64" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:CGuh1v2ZIv2xeQrhnPgZNNTkk6QhxO8/gUmQjyYf" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Program Files (x86)/TOS_DI-8.0.1/studio/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tJDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_12" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:5R23xmjhy1zAIHzepMFCyh0ZYJReM44nt9cNk7Bf" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <routinesParameter id="_E8CIQFgiEeyu-ZUskYlckQ" name="DataOperation"/>
+    <routinesParameter id="_E8lh4FgiEeyu-ZUskYlckQ" name="Mathematical"/>
+    <routinesParameter id="_E8rBcFgiEeyu-ZUskYlckQ" name="Numeric"/>
+    <routinesParameter id="_E8whAFgiEeyu-ZUskYlckQ" name="Relational"/>
+    <routinesParameter id="_E80ycFgiEeyu-ZUskYlckQ" name="StringHandling"/>
+    <routinesParameter id="_E85q8FgiEeyu-ZUskYlckQ" name="TalendDataGenerator"/>
+    <routinesParameter id="_E9CN0FgiEeyu-ZUskYlckQ" name="TalendDate"/>
+    <routinesParameter id="_E9N0AFgiEeyu-ZUskYlckQ" name="TalendStringUtil"/>
+    <routinesParameter id="_E9GfQFgiEeyu-ZUskYlckQ" name="TalendString"/>
+    <routinesParameter id="_QKaVwHUtEeydsuibDsGuYQ" name="Achrafs758"/>
+  </parameters>
+  <node componentName="tFileList" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileList_1" show="false"/>
+    <elementParameter field="DIRECTORY" name="DIRECTORY" value="&quot;C:/Users/S1-S2/Desktop/data/data&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LIST_MODE" value="BOTH"/>
+    <elementParameter field="CHECK" name="INCLUDSUBDIR" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="CASE_SENSITIVE" value="NO"/>
+    <elementParameter field="CHECK" name="ERROR" value="false"/>
+    <elementParameter field="CHECK" name="GLOBEXPRESSIONS" value="true"/>
+    <elementParameter field="TABLE" name="FILES">
+      <elementValue elementRef="FILEMASK" value="&quot;*.csv&quot;"/>
+    </elementParameter>
+    <elementParameter field="RADIO" name="ORDER_BY_NOTHING" value="true"/>
+    <elementParameter field="RADIO" name="ORDER_BY_FILENAME" value="false"/>
+    <elementParameter field="RADIO" name="ORDER_BY_FILESIZE" value="false"/>
+    <elementParameter field="RADIO" name="ORDER_BY_MODIFIEDDATE" value="false"/>
+    <elementParameter field="RADIO" name="ORDER_ACTION_ASC" value="true"/>
+    <elementParameter field="RADIO" name="ORDER_ACTION_DESC" value="false"/>
+    <elementParameter field="CHECK" name="IFEXCLUDE" value="false"/>
+    <elementParameter field="TEXT" name="EXCLUDEFILEMASK" value="&quot;*.txt&quot;" show="false"/>
+    <elementParameter field="CHECK" name="FORMAT_FILEPATH_TO_SLASH" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="32" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_0WJQAFkREeyu-ZUskYlckQ - metadata" show="false"/>
+    <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="((String)globalMap.get(&quot;tFileList_1_CURRENT_FILEPATH&quot;))"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="true"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HEADER" value="1"/>
+    <elementParameter field="TEXT" name="FOOTER" value="0"/>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="true"/>
+    <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="DIRECTORY" name="TEMP_DIR" value="&quot;C:/Program Files (x86)/TOS_DI-8.0.1/studio/workspace&quot;" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="RANDOM" value="false" show="false"/>
+    <elementParameter field="TEXT" name="NB_RANDOM" value="10" show="false"/>
+    <elementParameter field="CHECK" name="TRIMALL" value="false"/>
+    <elementParameter field="TABLE" name="TRIMSELECT">
+      <elementValue elementRef="SCHEMA_COLUMN" value="date"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="countryCode"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="countryName"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="regionName"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="industryName"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="categoryType"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="categoryName"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="categoryValue"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="rank"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
+    <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="SPLITRECORD" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DECODE" value="false"/>
+    <elementParameter field="TABLE" name="DECODE_COLS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="date"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="countryCode"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="countryName"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="regionName"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="industryName"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="categoryType"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="categoryName"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="categoryValue"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="rank"/>
+      <elementValue elementRef="DECODE" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="DESTINATION" value="" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="tFileInputDelimited_1">
+      <column comment="" key="false" length="10" name="date" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="countryCode" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="countryName" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="24" name="regionName" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="14" name="industryName" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="22" name="categoryType" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="categoryName" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="categoryValue" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="16" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="rank" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="metadata" name="REJECT">
+      <column comment="" key="false" length="10" name="date" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="countryCode" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="countryName" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="24" name="regionName" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="14" name="industryName" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="22" name="categoryType" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="categoryName" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="categoryValue" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="16" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="rank" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tUnite" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="128" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tUnite_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_0WJQAFkREeyu-ZUskYlckQ - metadata" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="tUnite_1">
+      <column comment="" key="false" length="10" name="date" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="countryCode" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="countryName" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="24" name="regionName" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="14" name="industryName" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="22" name="categoryType" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="categoryName" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="categoryValue" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="16" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="rank" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="128" posY="0">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_7fEo0HRgEeydsuibDsGuYQ-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="out1">
+      <column comment="" key="false" length="14" name="Industry" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="22" name="Cetegory" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="Category_Name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Date_Release" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="Country_Code" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="Country" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="24" name="Region" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="categoryValue" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="16" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Continent" nullable="true" pattern="" precision="0" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="World_Country_Ranking" nullable="true" pattern="" precision="0" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="out1" activateExpressionFilter="true">
+        <mapperTableEntries name="Industry" expression="StringHandling.EREPLACE(row2.industryName,&quot;All&quot;,&quot;Undefined&quot;) " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Cetegory" expression="StringHandling.EREPLACE(row2.categoryType,&quot;,&quot;,&quot; &quot;) " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Category_Name" expression="StringHandling.EREPLACE(row2.categoryName,&quot;,&quot;,&quot; &quot;) " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_Release" expression="row2.date " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Country_Code" expression="row2.countryCode" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Country" expression="row2.countryName" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Region" expression="StringHandling.EREPLACE(row2.regionName,&quot;,&quot;,&quot; &quot;); " type="id_String" nullable="true"/>
+        <mapperTableEntries name="categoryValue" expression="row2.categoryValue " type="id_Float" nullable="true"/>
+        <mapperTableEntries name="Continent" expression="row2.countryCode " type="id_String" nullable="true"/>
+        <mapperTableEntries name="World_Country_Ranking" expression="row2.countryCode  " type="id_String" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row2" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="date" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="countryCode" type="id_String" nullable="true"/>
+        <mapperTableEntries name="countryName" type="id_String" nullable="true"/>
+        <mapperTableEntries name="regionName" type="id_String" nullable="true"/>
+        <mapperTableEntries name="industryName" type="id_String" nullable="true"/>
+        <mapperTableEntries name="categoryType" type="id_String" nullable="true"/>
+        <mapperTableEntries name="categoryName" type="id_String" nullable="true"/>
+        <mapperTableEntries name="categoryValue" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="rank" type="id_Integer" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tReplace" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="256" posY="0">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tReplace_1" show="false"/>
+    <elementParameter field="CHECK" name="SIMPLE_MODE" value="true"/>
+    <elementParameter field="LABEL" name="SIMPLEMODE_OLDLABLE" value="Simple mode works with regex expression(in last version)" show="false"/>
+    <elementParameter field="TABLE" name="SUBSTITUTIONS">
+      <elementValue elementRef="INPUT_COLUMN" value="Continent"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot;us&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;North America&quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="Continent"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot;ca&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;North America&quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="Continent"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot;br&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;South America&quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="Continent"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot;cl&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;South America&quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="Continent"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot;cr&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;South America&quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="Continent"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot;uy&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;South America&quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="Continent"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot;au&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;Australia&quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="Continent"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot;cn&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;Asia&quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="Continent"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot;in&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;Asia&quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="Continent"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot;th&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;Asia&quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="Continent"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot;id&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;Asia&quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="Continent"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot;my&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;Asia&quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="Continent"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot;nz&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;Australia&quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="Continent"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot;ph&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;Asia&quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="Continent"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot;sa&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;Asia&quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="Continent"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot;sg&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;Asia&quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="Continent"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot;jp&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;Asia&quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="Continent"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot;ae&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;Asia&quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="Continent"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot;za&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;Africa&quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="Continent"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot;be&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;Europe&quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="Continent"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot;es&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;Europe&quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="Continent"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot;no&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;Europe&quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="Continent"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot;se&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;Europe&quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="Continent"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot;nl&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;Europe&quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="Continent"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot;it&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;Europe&quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="Continent"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot;de&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;Europe&quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="Continent"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot;fr&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;Europe&quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="Continent"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot;dk&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;Europe&quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="Continent"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot;ch&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;Europe&quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="Continent"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot;gb&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;Europe&quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="Continent"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot;hr&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;Europe&quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="Continent"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot;ie&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;Europe&quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="Continent"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot;fi&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;Europe&quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="Continent"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot;gr&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;Europe&quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="Continent"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot;pt&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;Europe&quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="World_Country_Ranking"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot;us&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;1rst world country&quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="World_Country_Ranking"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot;ca&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;1rst world country&quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="World_Country_Ranking"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot;br&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;3rd world country&quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="World_Country_Ranking"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot;cl&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;3rd world country&quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="World_Country_Ranking"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot;cr&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;3rd world country&quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="World_Country_Ranking"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot;uy&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;3rd world country&quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="World_Country_Ranking"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot;au&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;1rst world country&quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="World_Country_Ranking"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot;cn&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;2nd world country&quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="World_Country_Ranking"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot;hr&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;2nd world country&quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="World_Country_Ranking"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot;th&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;3rd world country&quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="World_Country_Ranking"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot;in&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;3rd world country&quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="World_Country_Ranking"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot;id&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;3rd world country&quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="World_Country_Ranking"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot;my&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;3rd world country&quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="World_Country_Ranking"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot;nz&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;1rst world country&quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="World_Country_Ranking"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot;ph&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;3rd world country&quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="World_Country_Ranking"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot;sa&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;3rd world country&quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="World_Country_Ranking"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot;sg&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;3rd world country&quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="World_Country_Ranking"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot;jp&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;1rst world country&quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="World_Country_Ranking"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot;ae&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;3rd world country&quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="World_Country_Ranking"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot;za&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;1rst world country&quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="World_Country_Ranking"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot;be&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;1rst world country&quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="World_Country_Ranking"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot;es&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;1rst world country&quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="World_Country_Ranking"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot;no&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;1rst world country&quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="World_Country_Ranking"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot;se&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;1rst world country&quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="World_Country_Ranking"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot;nl&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;1rst world country&quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="World_Country_Ranking"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot;it&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;1rst world country&quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="World_Country_Ranking"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot;de&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;1rst world country&quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="World_Country_Ranking"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot;fr&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;1rst world country&quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="World_Country_Ranking"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot;dk&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;1rst world country&quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="World_Country_Ranking"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot;ch&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;1rst world country&quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="World_Country_Ranking"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot;gb&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;1rst world country&quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="World_Country_Ranking"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot;ie&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;1rst world country&quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="World_Country_Ranking"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot;fi&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;1rst world country&quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="World_Country_Ranking"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot;gr&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;1rst world country&quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="World_Country_Ranking"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot;pt&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;1rst world country&quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="Region"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot;All&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;Undefined&quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="STRICT_MATCH" value="true" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_MODE" value="true"/>
+    <elementParameter field="TABLE" name="ADVANCED_SUBST"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tReplace_1">
+      <column comment="" key="false" length="14" name="Industry" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="22" name="Cetegory" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="Category_Name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Date_Release" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="Country_Code" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="Country" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="24" name="Region" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Continent" nullable="true" pattern="" precision="0" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="categoryValue" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="16" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="World_Country_Ranking" nullable="true" pattern="" precision="0" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="256" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_2" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_7fEo0HRgEeydsuibDsGuYQ-tMap_2-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="Allcountries">
+      <column comment="" key="false" length="14" name="Industry" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="22" name="Cetegory" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="Category_Name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="Category_Value" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="16" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Date_Release" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="Country_Code" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="Country" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="24" name="Region" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Continent" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="World_Country_Ranking" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="10" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FLOW" name="Date">
+      <column comment="" defaultValue="" key="true" length="-1" name="id_date" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="year" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="quarter" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="month" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FLOW" name="Place">
+      <column comment="" defaultValue="" key="true" length="-1" name="id_place" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Continent" nullable="true" pattern="" precision="0" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="Country" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="Country_Code" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="24" name="Region" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FLOW" name="Industry">
+      <column comment="" defaultValue="" key="true" length="-1" name="id_industry" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="14" name="Industry" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FLOW" name="World_Rank">
+      <column comment="" defaultValue="" key="true" length="-1" name="id_wolrd_rank" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="World_Country_Ranking" nullable="true" pattern="" precision="0" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FLOW" name="Trending">
+      <column comment="" defaultValue="" key="true" length="-1" name="id_trending" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="22" name="Category" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="Category_Name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FLOW" name="BOUGAGAG">
+      <column comment="" key="false" length="14" name="Industry" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="22" name="Cetegory" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="Category_Name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="Category_Value" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="16" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Date_Release" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="Country_Code" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="Country" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="24" name="Region" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Continent" nullable="true" pattern="" precision="0" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="World_Country_Ranking" nullable="true" pattern="" precision="0" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables sizeState="INTERMEDIATE" name="Var">
+        <mapperTableEntries name="id_industry" expression="Numeric.sequence(&quot;id_industry&quot;,1,1) " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="id_place" expression="Numeric.sequence(&quot;id_place&quot;,1,1) " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="id_trending" expression="Numeric.sequence(&quot;id_trending&quot;,1,1) " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="id_date" expression="Numeric.sequence(&quot;id_date&quot;,1,1) " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="id_wolrd_rank" expression="Numeric.sequence(&quot;id_world_rank&quot;,1,1) " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="year" expression="Integer.parseInt(TalendDate.formatDate(&quot;yyyy&quot;,row3.Date_Release) )" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="quarter" expression="((int)((Integer.parseInt(TalendDate.formatDate(&quot;MM&quot;,row3.Date_Release) )-1)/3)+1)" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="month" expression="Integer.parseInt(TalendDate.formatDate(&quot;MM&quot;,row3.Date_Release) )" type="id_Integer" nullable="true"/>
+      </varTables>
+      <outputTables sizeState="INTERMEDIATE" name="Allcountries">
+        <mapperTableEntries name="Industry" expression="row3.Industry" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Cetegory" expression="row3.Cetegory" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Category_Name" expression="row3.Category_Name" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Category_Value" expression=" row3.categoryValue " type="id_Float" nullable="true"/>
+        <mapperTableEntries name="Date_Release" expression="row3.Date_Release" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Country_Code" expression="row3.Country_Code" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Country" expression="row3.Country" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Region" expression="row3.Region" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Continent" expression="row3.Continent" type="id_String" nullable="true"/>
+        <mapperTableEntries name="World_Country_Ranking" expression="row3.World_Country_Ranking" type="id_String" nullable="true"/>
+      </outputTables>
+      <outputTables sizeState="INTERMEDIATE" name="Date">
+        <mapperTableEntries name="id_date" expression="Var.id_date " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="year" expression="Var.year " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="quarter" expression="Var.quarter " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="month" expression="Var.month " type="id_Integer" nullable="true"/>
+      </outputTables>
+      <outputTables sizeState="INTERMEDIATE" name="Place">
+        <mapperTableEntries name="id_place" expression="Var.id_place " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Continent" expression="row3.Continent " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Country" expression="row3.Country " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Country_Code" expression="row3.Country_Code " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Region" expression="row3.Region " type="id_String" nullable="true"/>
+      </outputTables>
+      <outputTables sizeState="INTERMEDIATE" name="Industry">
+        <mapperTableEntries name="id_industry" expression="Var.id_industry " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Industry" expression="row3.Industry " type="id_String" nullable="true"/>
+      </outputTables>
+      <outputTables sizeState="INTERMEDIATE" name="World_Rank">
+        <mapperTableEntries name="id_wolrd_rank" expression="Var.id_wolrd_rank " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="World_Country_Ranking" expression="row3.World_Country_Ranking " type="id_String" nullable="true"/>
+      </outputTables>
+      <outputTables sizeState="INTERMEDIATE" name="Trending">
+        <mapperTableEntries name="id_trending" expression="Var.id_trending " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Category" expression="row3.Cetegory " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Category_Name" expression="row3.Category_Name " type="id_String" nullable="true"/>
+      </outputTables>
+      <outputTables sizeState="INTERMEDIATE" name="BOUGAGAG">
+        <mapperTableEntries name="Industry" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Cetegory" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Category_Name" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Category_Value" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="Date_Release" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Country_Code" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Country" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Region" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Continent" type="id_String" nullable="true"/>
+        <mapperTableEntries name="World_Country_Ranking" type="id_String" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row3" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="Industry" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Cetegory" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Category_Name" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_Release" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Country_Code" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Country" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Region" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Continent" type="id_String" nullable="true"/>
+        <mapperTableEntries name="categoryValue" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="World_Country_Ranking" type="id_String" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tPostgresqlOutput" componentVersion="0.102" offsetLabelX="-46" offsetLabelY="0" posX="256" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_1" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;127.0.0.1&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;5432&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;Trending_jobs&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="PostgreSQL" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;postgres&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:iHOgmVqH7x6DtR9x6qr5XGjN7nel/lku5iC4f1MUuw9Civ0yfusAzJustg=="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;Allcountries&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CLEAR"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+    <elementParameter field="CHECK" name="USE_SPATIAL_OPTIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="SPATIAL_INDEX" value="false" show="false"/>
+    <elementParameter field="CHECK" name="GEOMETRY_COLUMNS" value="false" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="postgres_id" show="false"/>
+    <elementParameter field="CHECK" name="USE_ALTERNATE_SCHEMA" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ALTERNATE_SCHEMA" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="SAVE_POINT" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Industry"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Cetegory"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Category_Name"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Category_Value"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Date_Release"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Country_Code"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Country"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Region"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Continent"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="World_Country_Ranking"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
+    <elementParameter field="CHECK" name="CONVERT_COLUMN_TABLE_TO_LOWERCASE" value="false"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBOutput_1">
+      <column comment="" key="false" length="14" name="Industry" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="22" name="Cetegory" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="Category_Name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="Category_Value" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="16" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Date_Release" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="Country_Code" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="Country" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="24" name="Region" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Continent" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="World_Country_Ranking" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="10" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="false" length="14" name="Industry" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="22" name="Cetegory" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="Category_Name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="Category_Value" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="16" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Date_Release" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="Country_Code" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="Country" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="24" name="Region" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Continent" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="World_Country_Ranking" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tUniqRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="576" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tUniqRow_1" show="false"/>
+    <elementParameter field="TABLE" name="UNIQUE_KEY">
+      <elementValue elementRef="SCHEMA_COLUMN" value="id_date"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="year"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="quarter"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="month"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="ONLY_ONCE_EACH_DUPLICATED_KEY" value="false"/>
+    <elementParameter field="CHECK" name="IS_VIRTUAL_COMPONENT" value="false"/>
+    <elementParameter field="OPENED_LIST" name="BUFFER_SIZE" value="M" show="false"/>
+    <elementParameter field="DIRECTORY" name="TEMP_DIRECTORY" value="" show="false"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tUniqRow_1">
+      <column comment="" defaultValue="" key="true" length="-1" name="id_date" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="year" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="quarter" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="month" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="UNIQUE" name="UNIQUE">
+      <column comment="" defaultValue="" key="true" length="-1" name="id_date" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="year" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="quarter" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="month" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="DUPLICATE" name="DUPLICATE">
+      <column comment="" defaultValue="" key="true" length="-1" name="id_date" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="year" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="quarter" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="month" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tPostgresqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="704" posY="0">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_2" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;127.0.0.1&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;5432&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;Trending_jobs&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="PostgreSQL" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;postgres&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:iHRuj+btxmCOJ7JmU6VTIHEfut+MyM5pJq02mQIjBGiOqdZG0ul1/PD4Rw=="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;Date&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CLEAR"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+    <elementParameter field="CHECK" name="USE_SPATIAL_OPTIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="SPATIAL_INDEX" value="false" show="false"/>
+    <elementParameter field="CHECK" name="GEOMETRY_COLUMNS" value="false" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="postgres_id" show="false"/>
+    <elementParameter field="CHECK" name="USE_ALTERNATE_SCHEMA" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ALTERNATE_SCHEMA" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="SAVE_POINT" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="id_date"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="year"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="quarter"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="month"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
+    <elementParameter field="CHECK" name="CONVERT_COLUMN_TABLE_TO_LOWERCASE" value="false"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBOutput_2">
+      <column comment="" defaultValue="" key="true" length="-1" name="id_date" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="year" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="quarter" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="month" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" defaultValue="" key="true" length="-1" name="id_date" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="year" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="quarter" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="month" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tUniqRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="576" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tUniqRow_2" show="false"/>
+    <elementParameter field="TABLE" name="UNIQUE_KEY">
+      <elementValue elementRef="SCHEMA_COLUMN" value="id_place"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Continent"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Country"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Country_Code"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Region"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="ONLY_ONCE_EACH_DUPLICATED_KEY" value="false"/>
+    <elementParameter field="CHECK" name="IS_VIRTUAL_COMPONENT" value="false"/>
+    <elementParameter field="OPENED_LIST" name="BUFFER_SIZE" value="M" show="false"/>
+    <elementParameter field="DIRECTORY" name="TEMP_DIRECTORY" value="" show="false"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tUniqRow_2">
+      <column comment="" defaultValue="" key="true" length="-1" name="id_place" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Continent" nullable="true" pattern="" precision="0" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="Country" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="Country_Code" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="24" name="Region" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="UNIQUE" name="UNIQUE">
+      <column comment="" defaultValue="" key="true" length="-1" name="id_place" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Continent" nullable="true" pattern="" precision="0" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="Country" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="Country_Code" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="24" name="Region" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="DUPLICATE" name="DUPLICATE">
+      <column comment="" defaultValue="" key="true" length="-1" name="id_place" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Continent" nullable="true" pattern="" precision="0" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="Country" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="Country_Code" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="24" name="Region" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tPostgresqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="704" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_3" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;127.0.0.1&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;5432&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;Trending_jobs&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="PostgreSQL" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;postgres&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:KKTFq5qeijnpkpi+Mquz1zp5pmc+U1gbXb0P67S+Jm29pzDR3wekFOiyEw=="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;Place&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CLEAR"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+    <elementParameter field="CHECK" name="USE_SPATIAL_OPTIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="SPATIAL_INDEX" value="false" show="false"/>
+    <elementParameter field="CHECK" name="GEOMETRY_COLUMNS" value="false" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="postgres_id" show="false"/>
+    <elementParameter field="CHECK" name="USE_ALTERNATE_SCHEMA" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ALTERNATE_SCHEMA" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="SAVE_POINT" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="id_place"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Continent"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Country"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Country_Code"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Region"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
+    <elementParameter field="CHECK" name="CONVERT_COLUMN_TABLE_TO_LOWERCASE" value="false"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBOutput_3">
+      <column comment="" defaultValue="" key="true" length="-1" name="id_place" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Continent" nullable="true" pattern="" precision="0" sourceType="TEXT" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Country" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="TEXT" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Country_Code" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="TEXT" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Region" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="TEXT" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" defaultValue="" key="true" length="-1" name="id_place" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Continent" nullable="true" pattern="" precision="0" sourceType="TEXT" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Country" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="TEXT" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Country_Code" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="TEXT" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Region" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="TEXT" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tUniqRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="576" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tUniqRow_3" show="false"/>
+    <elementParameter field="TABLE" name="UNIQUE_KEY">
+      <elementValue elementRef="SCHEMA_COLUMN" value="id_industry"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Industry"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="ONLY_ONCE_EACH_DUPLICATED_KEY" value="false"/>
+    <elementParameter field="CHECK" name="IS_VIRTUAL_COMPONENT" value="false"/>
+    <elementParameter field="OPENED_LIST" name="BUFFER_SIZE" value="M" show="false"/>
+    <elementParameter field="DIRECTORY" name="TEMP_DIRECTORY" value="" show="false"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tUniqRow_3">
+      <column comment="" defaultValue="" key="true" length="-1" name="id_industry" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="14" name="Industry" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="UNIQUE" name="UNIQUE">
+      <column comment="" defaultValue="" key="true" length="-1" name="id_industry" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="14" name="Industry" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="DUPLICATE" name="DUPLICATE">
+      <column comment="" defaultValue="" key="true" length="-1" name="id_industry" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="14" name="Industry" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tPostgresqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="704" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_4" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;127.0.0.1&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;5432&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;Trending_jobs&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="PostgreSQL" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;postgres&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Gcvqlb3A2HJn5d2HQSLwENfgnpqOMXQg5TcsI9wK0p2x7vl7mCTMvozWzg=="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;Industry&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CLEAR"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+    <elementParameter field="CHECK" name="USE_SPATIAL_OPTIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="SPATIAL_INDEX" value="false" show="false"/>
+    <elementParameter field="CHECK" name="GEOMETRY_COLUMNS" value="false" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="postgres_id" show="false"/>
+    <elementParameter field="CHECK" name="USE_ALTERNATE_SCHEMA" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ALTERNATE_SCHEMA" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="SAVE_POINT" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="id_industry"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Industry"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
+    <elementParameter field="CHECK" name="CONVERT_COLUMN_TABLE_TO_LOWERCASE" value="false"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBOutput_4">
+      <column comment="" defaultValue="" key="true" length="-1" name="id_industry" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="14" name="Industry" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" defaultValue="" key="true" length="-1" name="id_industry" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="14" name="Industry" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tUniqRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="576" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tUniqRow_4" show="false"/>
+    <elementParameter field="TABLE" name="UNIQUE_KEY">
+      <elementValue elementRef="SCHEMA_COLUMN" value="id_trending"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Category"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Category_Name"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="ONLY_ONCE_EACH_DUPLICATED_KEY" value="false"/>
+    <elementParameter field="CHECK" name="IS_VIRTUAL_COMPONENT" value="false"/>
+    <elementParameter field="OPENED_LIST" name="BUFFER_SIZE" value="M" show="false"/>
+    <elementParameter field="DIRECTORY" name="TEMP_DIRECTORY" value="" show="false"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tUniqRow_4">
+      <column comment="" defaultValue="" key="true" length="-1" name="id_trending" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="22" name="Category" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="Category_Name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="UNIQUE" name="UNIQUE">
+      <column comment="" defaultValue="" key="true" length="-1" name="id_trending" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="22" name="Category" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="Category_Name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="DUPLICATE" name="DUPLICATE">
+      <column comment="" defaultValue="" key="true" length="-1" name="id_trending" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="22" name="Category" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="Category_Name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tPostgresqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="704" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_6" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;127.0.0.1&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;5432&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;Trending_jobs&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="PostgreSQL" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;postgres&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:h+krLs5sQopkVC1WfJ+BIUddUuJxfDayiAotn8hMAt97XIRxnPW+R0PFoQ=="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;Trends&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CLEAR"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+    <elementParameter field="CHECK" name="USE_SPATIAL_OPTIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="SPATIAL_INDEX" value="false" show="false"/>
+    <elementParameter field="CHECK" name="GEOMETRY_COLUMNS" value="false" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="postgres_id" show="false"/>
+    <elementParameter field="CHECK" name="USE_ALTERNATE_SCHEMA" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ALTERNATE_SCHEMA" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="SAVE_POINT" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="id_trending"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Category"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Category_Name"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
+    <elementParameter field="CHECK" name="CONVERT_COLUMN_TABLE_TO_LOWERCASE" value="false"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBOutput_6">
+      <column comment="" defaultValue="" key="true" length="-1" name="id_trending" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="22" name="Category" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="TEXT" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="Category_Name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="TEXT" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" defaultValue="" key="true" length="-1" name="id_trending" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="22" name="Category" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="TEXT" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="Category_Name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="TEXT" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tUniqRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="576" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tUniqRow_5" show="false"/>
+    <elementParameter field="TABLE" name="UNIQUE_KEY">
+      <elementValue elementRef="SCHEMA_COLUMN" value="id_wolrd_rank"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="World_Country_Ranking"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="ONLY_ONCE_EACH_DUPLICATED_KEY" value="false"/>
+    <elementParameter field="CHECK" name="IS_VIRTUAL_COMPONENT" value="false"/>
+    <elementParameter field="OPENED_LIST" name="BUFFER_SIZE" value="M" show="false"/>
+    <elementParameter field="DIRECTORY" name="TEMP_DIRECTORY" value="" show="false"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tUniqRow_5">
+      <column comment="" defaultValue="" key="true" length="-1" name="id_wolrd_rank" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="World_Country_Ranking" nullable="true" pattern="" precision="0" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="UNIQUE" name="UNIQUE">
+      <column comment="" defaultValue="" key="true" length="-1" name="id_wolrd_rank" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="World_Country_Ranking" nullable="true" pattern="" precision="0" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="DUPLICATE" name="DUPLICATE">
+      <column comment="" defaultValue="" key="true" length="-1" name="id_wolrd_rank" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="World_Country_Ranking" nullable="true" pattern="" precision="0" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tPostgresqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="704" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_5" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;127.0.0.1&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;5432&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;Trending_jobs&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="PostgreSQL" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;postgres&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:2qIbzxJaweIy+UfFm2BfDs5/09fqP2z1ZCBszsyUGBpmFGjT9zeFhWXUCw=="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;World_ranking&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CLEAR"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+    <elementParameter field="CHECK" name="USE_SPATIAL_OPTIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="SPATIAL_INDEX" value="false" show="false"/>
+    <elementParameter field="CHECK" name="GEOMETRY_COLUMNS" value="false" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="postgres_id" show="false"/>
+    <elementParameter field="CHECK" name="USE_ALTERNATE_SCHEMA" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ALTERNATE_SCHEMA" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="SAVE_POINT" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="id_wolrd_rank"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="World_Country_Ranking"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
+    <elementParameter field="CHECK" name="CONVERT_COLUMN_TABLE_TO_LOWERCASE" value="false"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBOutput_5">
+      <column comment="" defaultValue="" key="true" length="-1" name="id_wolrd_rank" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="World_Country_Ranking" nullable="true" pattern="" precision="0" sourceType="TEXT" type="id_String" originalLength="10" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" defaultValue="" key="true" length="-1" name="id_wolrd_rank" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="World_Country_Ranking" nullable="true" pattern="" precision="0" sourceType="TEXT" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tFileList_1" offsetLabelX="0" offsetLabelY="0" source="tFileList_1" target="tFileInputDelimited_1">
+    <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
+    <elementParameter field="TEXT" name="NUMBER_PARALLEL" value="2" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="iterate1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row1" lineStyle="10" mergeOrder="1" metaname="tFileInputDelimited_1" offsetLabelX="-30" offsetLabelY="-20" source="tFileInputDelimited_1" target="tUnite_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tUnite_1" offsetLabelX="0" offsetLabelY="0" source="tUnite_1" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="out1" lineStyle="0" metaname="out1" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tReplace_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="categoryValue"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="out1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tReplace_1" offsetLabelX="0" offsetLabelY="0" source="tReplace_1" target="tMap_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="Allcountries" lineStyle="0" metaname="Allcountries" offsetLabelX="50" offsetLabelY="-50" outputId="1" source="tMap_2" target="tDBOutput_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Allcountries" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="Date" lineStyle="0" metaname="Date" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMap_2" target="tUniqRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Date" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="Place" lineStyle="0" metaname="Place" offsetLabelX="0" offsetLabelY="0" outputId="3" source="tMap_2" target="tUniqRow_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Place" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="Industry" lineStyle="0" metaname="Industry" offsetLabelX="0" offsetLabelY="0" outputId="4" source="tMap_2" target="tUniqRow_3">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Industry" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="World_Rank" lineStyle="0" metaname="World_Rank" offsetLabelX="0" offsetLabelY="0" outputId="5" source="tMap_2" target="tUniqRow_5">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="World_Rank" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="Trending" lineStyle="0" metaname="Trending" offsetLabelX="0" offsetLabelY="0" outputId="6" source="tMap_2" target="tUniqRow_4">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="categoryValue"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Category_Name"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Trending" show="false"/>
+  </connection>
+  <connection connectorName="UNIQUE" label="row4" lineStyle="0" metaname="tUniqRow_1" offsetLabelX="0" offsetLabelY="0" source="tUniqRow_1" target="tDBOutput_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row4" show="false"/>
+  </connection>
+  <connection connectorName="UNIQUE" label="row5" lineStyle="0" metaname="tUniqRow_2" offsetLabelX="0" offsetLabelY="0" source="tUniqRow_2" target="tDBOutput_3">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row5" show="false"/>
+  </connection>
+  <connection connectorName="UNIQUE" label="row6" lineStyle="0" metaname="tUniqRow_3" offsetLabelX="0" offsetLabelY="0" source="tUniqRow_3" target="tDBOutput_4">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row6" show="false"/>
+  </connection>
+  <connection connectorName="UNIQUE" label="row7" lineStyle="0" metaname="tUniqRow_4" offsetLabelX="0" offsetLabelY="0" source="tUniqRow_4" target="tDBOutput_6">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row7" show="false"/>
+  </connection>
+  <connection connectorName="UNIQUE" label="row8" lineStyle="0" metaname="tUniqRow_5" offsetLabelX="0" offsetLabelY="0" source="tUniqRow_5" target="tDBOutput_5">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row8" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileList_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>
